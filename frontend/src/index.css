@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card { @apply bg-white border border-paper-line rounded-lg; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-md px-3.5 py-2 text-sm font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-route focus-visible:ring-offset-2 disabled:opacity-50; }
+  .btn-primary { @apply btn bg-route text-white hover:bg-route-dark; }
+  .btn-ghost { @apply btn border border-paper-line bg-white text-ink hover:bg-paper; }
+  .btn-danger { @apply btn bg-breach text-white hover:opacity-90; }
+  .input { @apply w-full rounded-md border border-paper-line bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-route; }
+  .label { @apply block text-sm font-semibold text-ink-soft mb-1; }
+  .th { @apply px-3 py-2 text-left text-xs font-semibold text-ink-mute whitespace-nowrap; }
+  .td { @apply px-3 py-2.5 text-sm align-top; }
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }

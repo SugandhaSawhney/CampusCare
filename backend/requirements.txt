@@ -1,0 +1,6 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+SQLAlchemy>=2.0
+pydantic>=2.5
+PyJWT>=2.8
+python-dotenv>=1.0
